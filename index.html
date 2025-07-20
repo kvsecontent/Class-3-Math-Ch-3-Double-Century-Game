@@ -229,79 +229,6 @@
             border-color: #27ae60;
         }
 
-        .snake-ladder-board {
-            display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            grid-template-rows: repeat(10, 1fr);
-            gap: 2px;
-            max-width: 500px;
-            margin: 20px auto;
-            aspect-ratio: 1;
-        }
-
-        .board-cell {
-            background: white;
-            border: 2px solid #3498db;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 0.8em;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .board-cell:hover {
-            background: #74b9ff;
-            color: white;
-        }
-
-        .board-cell.ladder {
-            background: #00b894;
-            color: white;
-        }
-
-        .board-cell.snake {
-            background: #e17055;
-            color: white;
-        }
-
-        .talking-pot {
-            width: 150px;
-            height: 150px;
-            background: linear-gradient(45deg, #fd79a8, #fdcb6e);
-            border-radius: 50%;
-            margin: 20px auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 3em;
-            cursor: pointer;
-            transition: all 0.3s;
-            position: relative;
-        }
-
-        .talking-pot:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-
-        .pot-speech {
-            position: absolute;
-            top: -80px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: white;
-            padding: 15px;
-            border-radius: 15px;
-            border: 3px solid #3498db;
-            display: none;
-            min-width: 120px;
-            text-align: center;
-            font-size: 0.4em;
-        }
-
         .number-pair {
             background: white;
             border-radius: 10px;
@@ -318,219 +245,6 @@
             border-radius: 5px;
             text-align: center;
             margin: 0 10px;
-        }
-
-        .number-line {
-            position: relative;
-            height: 80px;
-            background: #ecf0f1;
-            border-radius: 10px;
-            margin: 20px 0;
-            display: flex;
-            align-items: center;
-        }
-
-        .number-line-scale {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .number-mark {
-            font-size: 0.8em;
-            font-weight: bold;
-        }
-
-        .jump-arc {
-            position: absolute;
-            height: 40px;
-            border: 3px solid #e17055;
-            border-bottom: none;
-            border-radius: 50px 50px 0 0;
-            cursor: pointer;
-        }
-
-        .flower-petals {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            margin: 20px auto;
-        }
-
-        .flower-center {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 80px;
-            height: 80px;
-            background: #f39c12;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: white;
-        }
-
-        .petal {
-            position: absolute;
-            width: 100px;
-            height: 60px;
-            background: #e74c3c;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .petal:hover {
-            background: #c0392b;
-            transform: scale(1.1);
-        }
-
-        .petal input {
-            width: 50px;
-            text-align: center;
-            border: none;
-            background: transparent;
-            color: white;
-            font-weight: bold;
-            font-size: 1em;
-        }
-
-        .petal input::placeholder {
-            color: rgba(255,255,255,0.7);
-        }
-
-        .matchstick-bundles {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin: 15px 0;
-            flex-wrap: wrap;
-        }
-
-        .bundle {
-            width: 60px;
-            height: 80px;
-            background: #8b4513;
-            border-radius: 5px;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-        }
-
-        .bundle.hundred {
-            background: #2c3e50;
-            width: 80px;
-            height: 100px;
-        }
-
-        .bundle.ten {
-            background: #27ae60;
-        }
-
-        .bundle.one {
-            background: #e74c3c;
-            width: 15px;
-            height: 60px;
-        }
-
-        .clap-snap-pat {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
-            flex-wrap: wrap;
-        }
-
-        .sound-button {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: none;
-            font-size: 1.5em;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .clap-btn {
-            background: linear-gradient(45deg, #ff6b6b, #ee5a52);
-            color: white;
-        }
-
-        .snap-btn {
-            background: linear-gradient(45deg, #4ecdc4, #44a08d);
-            color: white;
-        }
-
-        .pat-btn {
-            background: linear-gradient(45deg, #45b7d1, #96c93d);
-            color: white;
-        }
-
-        .sound-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-        }
-
-        .stones-path {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
-        }
-
-        .stone {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(45deg, #95a5a6, #7f8c8d);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s;
-            border: 3px solid transparent;
-        }
-
-        .stone:hover {
-            border-color: #3498db;
-            transform: translateY(-5px);
-        }
-
-        .stone.placed {
-            background: linear-gradient(45deg, #27ae60, #2ecc71);
-            color: white;
-        }
-
-        .stone input {
-            width: 40px;
-            text-align: center;
-            border: none;
-            background: transparent;
-            font-weight: bold;
-            font-size: 0.9em;
         }
 
         .discovery-section {
@@ -589,24 +303,6 @@
             .objects-grid {
                 grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
             }
-
-            .snake-ladder-board {
-                max-width: 300px;
-            }
-            
-            .board-cell {
-                font-size: 0.6em;
-            }
-
-            .clap-snap-pat {
-                gap: 15px;
-            }
-
-            .sound-button {
-                width: 80px;
-                height: 80px;
-                font-size: 1.2em;
-            }
         }
 
         @media (max-width: 480px) {
@@ -622,17 +318,6 @@
             .btn-large {
                 padding: 15px 25px;
                 font-size: 1.1em;
-            }
-
-            .talking-pot {
-                width: 120px;
-                height: 120px;
-                font-size: 2.5em;
-            }
-
-            .flower-petals {
-                width: 250px;
-                height: 250px;
             }
         }
     </style>
@@ -668,14 +353,6 @@
                     <h3>🔢 Object Estimation</h3>
                     <p>Count and estimate different objects like oranges, bangles, and more!</p>
                 </div>
-                <div class="menu-item" onclick="showGame('snakeLadderGame')">
-                    <h3>🐍 Snake & Ladder Quiz</h3>
-                    <p>Answer questions about the snake and ladder board</p>
-                </div>
-                <div class="menu-item" onclick="showGame('talkingPotGame')">
-                    <h3>🫖 Talking Pot Challenge</h3>
-                    <p>Discover the pattern with the magical talking pot</p>
-                </div>
                 <div class="menu-item" onclick="showGame('makeHundredGame')">
                     <h3>💯 Making Hundreds</h3>
                     <p>Find different ways to make 100 by adding numbers</p>
@@ -688,33 +365,13 @@
                     <h3>📦 Fill the Box</h3>
                     <p>Complete equations like 60 + __ = 100</p>
                 </div>
-                <div class="menu-item" onclick="showGame('flowerPetalsGame')">
-                    <h3>🌸 Flower Petals</h3>
-                    <p>Make each petal add up to 100</p>
-                </div>
                 <div class="menu-item" onclick="showGame('numberLineCompleteGame')">
                     <h3>📏 Complete Number Lines</h3>
                     <p>Fill in missing numbers on number lines</p>
                 </div>
-                <div class="menu-item" onclick="showGame('bundleMatchGame')">
-                    <h3>🪵 Bundle Matching</h3>
-                    <p>Match numbers with matchstick bundles up to 200</p>
-                </div>
-                <div class="menu-item" onclick="showGame('clapSnapPatGame')">
-                    <h3>👏 Clap, Snap & Pat</h3>
-                    <p>Create and decode numbers using sounds</p>
-                </div>
-                <div class="menu-item" onclick="showGame('stonesOrderGame')">
-                    <h3>🪨 Stones in Order</h3>
-                    <p>Arrange numbers in correct sequence on stones</p>
-                </div>
-                <div class="menu-item" onclick="showGame('jumpingPatternsGame')">
-                    <h3>🏃 Jumping Patterns</h3>
-                    <p>Complete number patterns by jumping</p>
-                </div>
-                <div class="menu-item" onclick="showGame('moreLessTableGame')">
-                    <h3>📊 More & Less Tables</h3>
-                    <p>Fill tables with 1 more, 1 less, 2 more, 2 less</p>
+                <div class="menu-item" onclick="showGame('patternGame')">
+                    <h3>🔄 Number Patterns</h3>
+                    <p>Complete number patterns and sequences</p>
                 </div>
             </div>
         </div>
@@ -753,81 +410,6 @@
             </div>
 
             <div class="feedback" id="estimationFeedback"></div>
-        </div>
-
-        <!-- Snake & Ladder Game -->
-        <div class="screen game-screen" id="snakeLadderGame">
-            <div class="game-header">
-                <h2 class="game-title">🐍 Snake & Ladder Quiz</h2>
-                <div class="score">Score: <span id="snakeScore">0</span></div>
-                <button class="btn" onclick="showMenu()">← Back to Menu</button>
-            </div>
-            
-            <div class="challenge-box">
-                <h3>🎲 Snake & Ladder Challenge!</h3>
-                <p>Study the board and answer the questions correctly</p>
-            </div>
-
-            <div class="snake-ladder-board" id="snakeLadderBoard"></div>
-
-            <div style="text-align: center; margin: 20px 0;">
-                <div id="currentQuestion" style="background: white; padding: 20px; border-radius: 10px; margin: 20px 0; font-weight: bold;"></div>
-                <input type="number" id="questionAnswer" placeholder="Your answer" style="padding: 10px; font-size: 1.2em; text-align: center; width: 100px;">
-                <br><br>
-                <button class="btn" onclick="checkSnakeAnswer()">Submit Answer</button>
-                <button class="btn" onclick="generateSnakeQuestion()">New Question</button>
-            </div>
-
-            <div class="discovery-section">
-                <h3>Board Analysis:</h3>
-                <p>Questions answered: <span id="questionsAnswered">0</span></p>
-                <p>Correct answers: <span id="correctAnswers">0</span></p>
-                <div id="boardLearnings"></div>
-            </div>
-
-            <div class="feedback" id="snakeFeedback"></div>
-        </div>
-
-        <!-- Talking Pot Game -->
-        <div class="screen game-screen" id="talkingPotGame">
-            <div class="game-header">
-                <h2 class="game-title">🫖 Talking Pot Challenge</h2>
-                <div class="score">Score: <span id="potScore">0</span></div>
-                <button class="btn" onclick="showMenu()">← Back to Menu</button>
-            </div>
-            
-            <div class="challenge-box">
-                <h3>🔮 Magical Talking Pot!</h3>
-                <p>Tell the pot a number, and it will tell you the next number. Can you figure out the pattern?</p>
-            </div>
-
-            <div class="talking-pot" onclick="askPot()">
-                🫖
-                <div class="pot-speech" id="potSpeech">Hello!</div>
-            </div>
-
-            <div style="text-align: center; margin: 20px 0;">
-                <div style="margin: 15px 0;">
-                    <label>Tell the pot: </label>
-                    <input type="number" id="potInput" placeholder="Enter number" style="width: 100px; padding: 10px; font-size: 1.2em; text-align: center;">
-                </div>
-                <button class="btn" onclick="tellPot()">Tell the Pot</button>
-                <button class="btn" onclick="testPattern()">Test My Pattern</button>
-            </div>
-
-            <div class="discovery-section">
-                <h3>Pattern Discovery:</h3>
-                <p>Numbers tested: <span id="numbersTestedPot">0</span></p>
-                <div id="potConversations"></div>
-                <div id="patternChallenge" style="display: none;">
-                    <h4>Pattern Test:</h4>
-                    <p>If I say <span id="testNumber"></span>, what will the pot say?</p>
-                    <input type="number" id="patternAnswer" placeholder="?" style="width: 80px; padding: 8px; text-align: center;">
-                    <button class="btn" onclick="checkPatternAnswer()">Check</button>
-                </div>
-            </div>
-
-            <div class="feedback" id="potFeedback"></div>
         </div>
 
         <!-- Make Hundred Game -->
@@ -874,14 +456,14 @@
                 <p>Click on the number line to make jumps that add up to exactly 100</p>
             </div>
 
-            <div class="number-line" id="jumpingLine">
-                <div class="number-line-scale">
-                    <span class="number-mark">0</span>
-                    <span class="number-mark">20</span>
-                    <span class="number-mark">40</span>
-                    <span class="number-mark">60</span>
-                    <span class="number-mark">80</span>
-                    <span class="number-mark">100</span>
+            <div style="position: relative; height: 80px; background: #ecf0f1; border-radius: 10px; margin: 20px 0; display: flex; align-items: center;" id="jumpingLine">
+                <div style="position: absolute; bottom: 0; width: 100%; height: 20px; display: flex; justify-content: space-between; align-items: center; padding: 0 20px;">
+                    <span style="font-size: 0.8em; font-weight: bold;">0</span>
+                    <span style="font-size: 0.8em; font-weight: bold;">20</span>
+                    <span style="font-size: 0.8em; font-weight: bold;">40</span>
+                    <span style="font-size: 0.8em; font-weight: bold;">60</span>
+                    <span style="font-size: 0.8em; font-weight: bold;">80</span>
+                    <span style="font-size: 0.8em; font-weight: bold;">100</span>
                 </div>
             </div>
 
@@ -934,38 +516,6 @@
             <div class="feedback" id="boxFeedback"></div>
         </div>
 
-        <!-- Flower Petals Game -->
-        <div class="screen game-screen" id="flowerPetalsGame">
-            <div class="game-header">
-                <h2 class="game-title">🌸 Flower Petals</h2>
-                <div class="score">Score: <span id="flowerScore">0</span></div>
-                <button class="btn" onclick="showMenu()">← Back to Menu</button>
-            </div>
-            
-            <div class="challenge-box">
-                <h3>🌺 Make Beautiful Flowers!</h3>
-                <p>Fill each petal so that the numbers in each petal pair add up to 100</p>
-            </div>
-
-            <div class="flower-petals" id="flowerDisplay">
-                <div class="flower-center">100</div>
-            </div>
-
-            <div style="text-align: center; margin: 20px 0;">
-                <button class="btn" onclick="checkFlowerPetals()">Check Petals</button>
-                <button class="btn" onclick="generateFlowerChallenge()">New Flower</button>
-            </div>
-
-            <div class="discovery-section">
-                <h3>Your Flower Garden:</h3>
-                <p>Flowers completed: <span id="flowersCompleted">0</span></p>
-                <p>Perfect petals: <span id="perfectPetals">0</span></p>
-                <div id="flowerPatterns"></div>
-            </div>
-
-            <div class="feedback" id="flowerFeedback"></div>
-        </div>
-
         <!-- Number Line Complete Game -->
         <div class="screen game-screen" id="numberLineCompleteGame">
             <div class="game-header">
@@ -995,200 +545,36 @@
             <div class="feedback" id="lineFeedback"></div>
         </div>
 
-        <!-- Bundle Match Game -->
-        <div class="screen game-screen" id="bundleMatchGame">
+        <!-- Pattern Game -->
+        <div class="screen game-screen" id="patternGame">
             <div class="game-header">
-                <h2 class="game-title">🪵 Bundle Matching</h2>
-                <div class="score">Score: <span id="bundleScore">0</span></div>
-                <button class="btn" onclick="showMenu()">← Back to Menu</button>
-            </div>
-            
-            <div class="challenge-box">
-                <h3>🔗 Match Numbers with Bundles!</h3>
-                <p>Connect each number with its correct matchstick bundle representation</p>
-            </div>
-
-            <div id="bundleMatching" style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin: 20px 0;">
-                <div>
-                    <h4 style="text-align: center; margin-bottom: 15px;">Numbers</h4>
-                    <div id="numbersToMatch"></div>
-                </div>
-                <div>
-                    <h4 style="text-align: center; margin-bottom: 15px;">Bundle Representations</h4>
-                    <div id="bundlesToMatch"></div>
-                </div>
-            </div>
-
-            <div style="text-align: center; margin: 20px 0;">
-                <button class="btn" onclick="checkBundleMatches()">Check Matches</button>
-                <button class="btn" onclick="generateBundleChallenge()">New Challenge</button>
-            </div>
-
-            <div class="discovery-section">
-                <h3>Your Bundle Understanding:</h3>
-                <p>Matches attempted: <span id="matchesAttempted">0</span></p>
-                <p>Correct matches: <span id="correctMatches">0</span></p>
-            </div>
-
-            <div class="feedback" id="bundleFeedback"></div>
-        </div>
-
-        <!-- Clap Snap Pat Game -->
-        <div class="screen game-screen" id="clapSnapPatGame">
-            <div class="game-header">
-                <h2 class="game-title">👏 Clap, Snap & Pat</h2>
-                <div class="score">Score: <span id="cspScore">0</span></div>
-                <button class="btn" onclick="showMenu()">← Back to Menu</button>
-            </div>
-            
-            <div class="challenge-box">
-                <h3>🎵 Create Numbers with Sounds!</h3>
-                <p>1 Clap = 100, 1 Snap = 10, 1 Pat = 1. Create the target number!</p>
-                <div style="margin: 15px 0;">
-                    <strong>Target Number: <span id="cspTarget">123</span></strong>
-                </div>
-            </div>
-
-            <div class="clap-snap-pat">
-                <button class="sound-button clap-btn" onclick="addSound('clap')">
-                    <span>👏</span>
-                    <small>CLAP</small>
-                    <small>(100)</small>
-                </button>
-                <button class="sound-button snap-btn" onclick="addSound('snap')">
-                    <span>🫰</span>
-                    <small>SNAP</small>
-                    <small>(10)</small>
-                </button>
-                <button class="sound-button pat-btn" onclick="addSound('pat')">
-                    <span>🤚</span>
-                    <small>PAT</small>
-                    <small>(1)</small>
-                </button>
-            </div>
-
-            <div style="text-align: center; margin: 20px 0;">
-                <div style="background: white; padding: 20px; border-radius: 10px; margin: 20px 0;">
-                    <h4>Your Pattern: <span id="cspPattern">None</span></h4>
-                    <h4>Your Number: <span id="cspResult">0</span></h4>
-                </div>
-                <button class="btn" onclick="checkCSPAnswer()">Check Answer</button>
-                <button class="btn" onclick="clearCSPPattern()">Clear Pattern</button>
-                <button class="btn" onclick="generateCSPChallenge()">New Number</button>
-            </div>
-
-            <div class="discovery-section">
-                <h3>Your Sound Patterns:</h3>
-                <p>Numbers created: <span id="numbersCreated">0</span></p>
-                <p>Correct patterns: <span id="correctPatterns">0</span></p>
-                <div id="cspHistory"></div>
-            </div>
-
-            <div class="feedback" id="cspFeedback"></div>
-        </div>
-
-        <!-- Stones Order Game -->
-        <div class="screen game-screen" id="stonesOrderGame">
-            <div class="game-header">
-                <h2 class="game-title">🪨 Stones in Order</h2>
-                <div class="score">Score: <span id="stoneScore">0</span></div>
-                <button class="btn" onclick="showMenu()">← Back to Menu</button>
-            </div>
-            
-            <div class="challenge-box">
-                <h3>🛤️ Arrange the Stepping Stones!</h3>
-                <p>Fill in the missing numbers to complete the number sequence</p>
-            </div>
-
-            <div class="stones-path" id="stonesPath"></div>
-
-            <div style="text-align: center; margin: 20px 0;">
-                <button class="btn" onclick="checkStoneOrder()">Check Order</button>
-                <button class="btn" onclick="generateStoneChallenge()">New Stone Path</button>
-            </div>
-
-            <div class="discovery-section">
-                <h3>Your Stone Paths:</h3>
-                <p>Paths completed: <span id="pathsCompleted">0</span></p>
-                <p>Stones placed correctly: <span id="stonesCorrect">0</span></p>
-            </div>
-
-            <div class="feedback" id="stoneFeedback"></div>
-        </div>
-
-        <!-- Jumping Patterns Game -->
-        <div class="screen game-screen" id="jumpingPatternsGame">
-            <div class="game-header">
-                <h2 class="game-title">🏃 Jumping Patterns</h2>
+                <h2 class="game-title">🔄 Number Patterns</h2>
                 <div class="score">Score: <span id="patternScore">0</span></div>
                 <button class="btn" onclick="showMenu()">← Back to Menu</button>
             </div>
             
             <div class="challenge-box">
-                <h3>🦘 Complete the Jump Patterns!</h3>
-                <p>Fill in the missing numbers by following the jumping pattern</p>
+                <h3>🧩 Complete the Patterns!</h3>
+                <p>Find the pattern and fill in the missing numbers</p>
                 <div style="margin: 15px 0;">
-                    <strong>Jump Pattern: +<span id="jumpPattern">5</span></strong>
+                    <strong>Pattern Type: <span id="patternType">+5</span></strong>
                 </div>
             </div>
 
-            <div id="jumpingPatterns" style="margin: 20px 0;"></div>
+            <div id="patternContainer" style="margin: 20px 0;"></div>
 
             <div style="text-align: center; margin: 20px 0;">
-                <button class="btn" onclick="checkJumpingPatterns()">Check Patterns</button>
-                <button class="btn" onclick="generateJumpingChallenge()">New Pattern</button>
+                <button class="btn" onclick="checkPatterns()">Check Patterns</button>
+                <button class="btn" onclick="generatePatternChallenge()">New Pattern</button>
             </div>
 
             <div class="discovery-section">
                 <h3>Your Pattern Mastery:</h3>
                 <p>Patterns completed: <span id="patternsCompleted">0</span></p>
-                <p>Jump accuracy: <span id="jumpAccuracy">0</span>%</p>
+                <p>Pattern accuracy: <span id="patternAccuracy">0</span>%</p>
             </div>
 
             <div class="feedback" id="patternFeedback"></div>
-        </div>
-
-        <!-- More Less Table Game -->
-        <div class="screen game-screen" id="moreLessTableGame">
-            <div class="game-header">
-                <h2 class="game-title">📊 More & Less Tables</h2>
-                <div class="score">Score: <span id="tableScore">0</span></div>
-                <button class="btn" onclick="showMenu()">← Back to Menu</button>
-            </div>
-            
-            <div class="challenge-box">
-                <h3>🧮 Master Number Relationships!</h3>
-                <p>Complete the tables by finding numbers that are more or less than the given number</p>
-            </div>
-
-            <div style="overflow-x: auto; margin: 20px 0;">
-                <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden;">
-                    <thead>
-                        <tr style="background: #3498db; color: white;">
-                            <th style="padding: 15px; border: 2px solid #ecf0f1;">2 Less</th>
-                            <th style="padding: 15px; border: 2px solid #ecf0f1;">1 Less</th>
-                            <th style="padding: 15px; border: 2px solid #ecf0f1;">Number</th>
-                            <th style="padding: 15px; border: 2px solid #ecf0f1;">1 More</th>
-                            <th style="padding: 15px; border: 2px solid #ecf0f1;">2 More</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody"></tbody>
-                </table>
-            </div>
-
-            <div style="text-align: center; margin: 20px 0;">
-                <button class="btn" onclick="checkTable()">Check Table</button>
-                <button class="btn" onclick="generateNewTable()">New Table</button>
-                <button class="btn" onclick="addTableRow()">Add Row</button>
-            </div>
-
-            <div class="discovery-section">
-                <h3>Your Table Mastery:</h3>
-                <p>Rows completed: <span id="rowsCompleted">0</span></p>
-                <p>Accuracy rate: <span id="tableAccuracy">0</span>%</p>
-            </div>
-
-            <div class="feedback" id="tableFeedback"></div>
         </div>
     </div>
 
@@ -1198,22 +584,15 @@
         let playerName = '';
         let playerClass = '';
         let gameScores = {
-            estimation: 0, snake: 0, pot: 0, hundred: 0, jump: 0,
-            box: 0, flower: 0, line: 0, bundle: 0, csp: 0,
-            stone: 0, pattern: 0, table: 0
+            estimation: 0, hundred: 0, jump: 0,
+            box: 0, line: 0, pattern: 0
         };
 
         // Game data and variables
         let currentObjects = [];
         let estimatedCount = 0;
         let actualCount = 0;
-        let potConversations = [];
         let jumpClicks = [];
-        let currentCSPTarget = 123;
-        let cspSounds = [];
-        let selectedNumber = null;
-        let selectedBundle = null;
-        let matches = [];
 
         // Utility functions
         function hideAllScreens() {
@@ -1255,19 +634,22 @@
         function initializeGame(gameId) {
             switch(gameId) {
                 case 'estimationGame': initEstimationGame(); break;
-                case 'snakeLadderGame': initSnakeLadderGame(); break;
-                case 'talkingPotGame': initTalkingPotGame(); break;
                 case 'makeHundredGame': initMakeHundredGame(); break;
                 case 'numberLineJumpGame': initNumberLineJumpGame(); break;
                 case 'fillBoxGame': initFillBoxGame(); break;
-                case 'flowerPetalsGame': initFlowerPetalsGame(); break;
                 case 'numberLineCompleteGame': initNumberLineCompleteGame(); break;
-                case 'bundleMatchGame': initBundleMatchGame(); break;
-                case 'clapSnapPatGame': initClapSnapPatGame(); break;
-                case 'stonesOrderGame': initStonesOrderGame(); break;
-                case 'jumpingPatternsGame': initJumpingPatternsGame(); break;
-                case 'moreLessTableGame': initMoreLessTableGame(); break;
+                case 'patternGame': initPatternGame(); break;
             }
+        }
+
+        function showFeedback(feedbackId, message, type) {
+            const feedback = document.getElementById(feedbackId);
+            feedback.textContent = message;
+            feedback.className = `feedback ${type === 'error' ? 'error' : ''} show`;
+            
+            setTimeout(() => {
+                feedback.classList.remove('show');
+            }, 3000);
         }
 
         // Estimation Game Functions
@@ -1361,152 +743,6 @@
             }
             
             document.getElementById('estimationScore').textContent = gameScores.estimation;
-        }
-
-        // Snake & Ladder Game Functions
-        function initSnakeLadderGame() {
-            createSnakeLadderBoard();
-            generateSnakeQuestion();
-        }
-
-        function createSnakeLadderBoard() {
-            const board = document.getElementById('snakeLadderBoard');
-            board.innerHTML = '';
-            
-            for (let row = 0; row < 10; row++) {
-                for (let col = 0; col < 10; col++) {
-                    const cellNumber = row % 2 === 0 ? 
-                        (10 - row) * 10 - col : 
-                        (10 - row - 1) * 10 + col + 1;
-                    
-                    const cell = document.createElement('div');
-                    cell.className = 'board-cell';
-                    cell.textContent = cellNumber;
-                    
-                    if ([13, 27, 44, 58, 75].includes(cellNumber)) {
-                        cell.classList.add('ladder');
-                        cell.innerHTML += '<br>🪜';
-                    } else if ([99, 84, 62, 37, 16].includes(cellNumber)) {
-                        cell.classList.add('snake');
-                        cell.innerHTML += '<br>🐍';
-                    }
-                    
-                    board.appendChild(cell);
-                }
-            }
-        }
-
-        const snakeQuestions = [
-            { q: "Which number will you reach if you take the ladder from 13?", a: 33, explanation: "Ladder from 13 goes to 33" },
-            { q: "If you land on the snake at 99, which number will you reach?", a: 1, explanation: "Snake from 99 goes down to 1" },
-            { q: "What number do you need on the die to reach the snake from 96?", a: 3, explanation: "96 + 3 = 99 (snake head)" },
-            { q: "Which ladder takes you closest to 100?", a: 75, explanation: "Ladder at 75 is closest to the end" }
-        ];
-
-        let currentSnakeQuestion = 0;
-
-        function generateSnakeQuestion() {
-            currentSnakeQuestion = Math.floor(Math.random() * snakeQuestions.length);
-            const question = snakeQuestions[currentSnakeQuestion];
-            document.getElementById('currentQuestion').textContent = question.q;
-            document.getElementById('questionAnswer').value = '';
-        }
-
-        function checkSnakeAnswer() {
-            const userAnswer = parseInt(document.getElementById('questionAnswer').value);
-            const correctAnswer = snakeQuestions[currentSnakeQuestion].a;
-            const explanation = snakeQuestions[currentSnakeQuestion].explanation;
-            
-            const answeredSpan = document.getElementById('questionsAnswered');
-            const correctSpan = document.getElementById('correctAnswers');
-            const currentAnswered = parseInt(answeredSpan.textContent) + 1;
-            answeredSpan.textContent = currentAnswered;
-            
-            if (userAnswer === correctAnswer) {
-                const currentCorrect = parseInt(correctSpan.textContent) + 1;
-                correctSpan.textContent = currentCorrect;
-                showFeedback('snakeFeedback', `Correct! ${explanation}`, 'success');
-                gameScores.snake += 15;
-            } else {
-                showFeedback('snakeFeedback', `Not quite right. ${explanation}`, 'error');
-                gameScores.snake += 5;
-            }
-            
-            document.getElementById('snakeScore').textContent = gameScores.snake;
-        }
-
-        // Talking Pot Game Functions
-        function initTalkingPotGame() {
-            potConversations = [];
-            document.getElementById('numbersTestedPot').textContent = '0';
-            document.getElementById('potConversations').innerHTML = '';
-            document.getElementById('patternChallenge').style.display = 'none';
-        }
-
-        function tellPot() {
-            const number = parseInt(document.getElementById('potInput').value);
-            if (isNaN(number) || number < 0) {
-                showFeedback('potFeedback', 'Please enter a valid number!', 'error');
-                return;
-            }
-            
-            const potResponse = number + 1;
-            potConversations.push({ input: number, output: potResponse });
-            
-            document.getElementById('potSpeech').innerHTML = `You said ${number}<br>I say ${potResponse}`;
-            document.getElementById('potSpeech').style.display = 'block';
-            
-            setTimeout(() => {
-                document.getElementById('potSpeech').style.display = 'none';
-            }, 3000);
-            
-            const conversationDiv = document.getElementById('potConversations');
-            const convItem = document.createElement('p');
-            convItem.innerHTML = `You: ${number} → Pot: ${potResponse}`;
-            conversationDiv.appendChild(convItem);
-            
-            document.getElementById('numbersTestedPot').textContent = potConversations.length;
-            document.getElementById('potInput').value = '';
-            
-            if (potConversations.length >= 3) {
-                document.getElementById('patternChallenge').style.display = 'block';
-                const testNum = Math.floor(Math.random() * 50) + 10;
-                document.getElementById('testNumber').textContent = testNum;
-            }
-            
-            gameScores.pot += 5;
-            document.getElementById('potScore').textContent = gameScores.pot;
-        }
-
-        function askPot() {
-            document.getElementById('potSpeech').innerHTML = 'Tell me a number!';
-            document.getElementById('potSpeech').style.display = 'block';
-            setTimeout(() => {
-                document.getElementById('potSpeech').style.display = 'none';
-            }, 2000);
-        }
-
-        function testPattern() {
-            if (potConversations.length < 3) {
-                showFeedback('potFeedback', 'Test more numbers first to discover the pattern!', 'error');
-                return;
-            }
-            document.getElementById('patternChallenge').style.display = 'block';
-        }
-
-        function checkPatternAnswer() {
-            const testNumber = parseInt(document.getElementById('testNumber').textContent);
-            const userAnswer = parseInt(document.getElementById('patternAnswer').value);
-            const correctAnswer = testNumber + 1;
-            
-            if (userAnswer === correctAnswer) {
-                showFeedback('potFeedback', 'Perfect! You discovered the pattern: Pot always says one more!', 'success');
-                gameScores.pot += 25;
-            } else {
-                showFeedback('potFeedback', `Not quite right. The pot would say ${correctAnswer}. Keep observing!`, 'error');
-            }
-            
-            document.getElementById('potScore').textContent = gameScores.pot;
         }
 
         // Make Hundred Game Functions
@@ -1630,10 +866,16 @@
             jumpClicks.push(value);
             
             const arc = document.createElement('div');
-            arc.className = 'jump-arc';
+            arc.style.position = 'absolute';
+            arc.style.height = '40px';
+            arc.style.border = '3px solid #e17055';
+            arc.style.borderBottom = 'none';
+            arc.style.borderRadius = '50px 50px 0 0';
+            arc.style.cursor = 'pointer';
             arc.style.left = x - 20 + 'px';
             arc.style.width = '40px';
             arc.style.top = '10px';
+            arc.className = 'jump-arc';
             document.getElementById('jumpingLine').appendChild(arc);
             
             document.getElementById('currentJumps').textContent = jumpClicks.join(' + ');
@@ -1756,84 +998,6 @@
             document.getElementById('boxScore').textContent = gameScores.box;
         }
 
-        // Flower Petals Game Functions
-        function initFlowerPetalsGame() {
-            generateFlowerChallenge();
-        }
-
-        function generateFlowerChallenge() {
-            const container = document.getElementById('flowerDisplay');
-            container.querySelectorAll('.petal').forEach(petal => petal.remove());
-            
-            const petalNumbers = [45, 30, 37, 60, 55, 81];
-            const angles = [0, 60, 120, 180, 240, 300];
-            
-            petalNumbers.forEach((num, index) => {
-                const petal = document.createElement('div');
-                petal.className = 'petal';
-                
-                const angle = angles[index];
-                const radius = 110;
-                const x = Math.cos(angle * Math.PI / 180) * radius;
-                const y = Math.sin(angle * Math.PI / 180) * radius;
-                
-                petal.style.left = `calc(50% + ${x}px - 50px)`;
-                petal.style.top = `calc(50% + ${y}px - 30px)`;
-                
-                petal.innerHTML = `
-                    ${num} + 
-                    <input type="number" placeholder="?" class="petal-input" data-first="${num}">
-                `;
-                
-                container.appendChild(petal);
-            });
-        }
-
-        function checkFlowerPetals() {
-            const inputs = document.querySelectorAll('.petal-input');
-            let completed = 0;
-            let perfect = 0;
-            
-            inputs.forEach(input => {
-                const firstNumber = parseInt(input.dataset.first);
-                const secondNumber = parseInt(input.value);
-                
-                if (!isNaN(secondNumber)) {
-                    completed++;
-                    const sum = firstNumber + secondNumber;
-                    
-                    if (sum === 100) {
-                        perfect++;
-                        input.parentElement.style.background = '#27ae60';
-                    } else {
-                        input.parentElement.style.background = '#e74c3c';
-                    }
-                }
-            });
-            
-            document.getElementById('perfectPetals').textContent = perfect;
-            
-            if (perfect === inputs.length) {
-                const flowersSpan = document.getElementById('flowersCompleted');
-                const currentFlowers = parseInt(flowersSpan.textContent) + 1;
-                flowersSpan.textContent = currentFlowers;
-                
-                const patternsDiv = document.getElementById('flowerPatterns');
-                const flower = document.createElement('p');
-                flower.innerHTML = `🌸 Flower ${currentFlowers}: All petals perfect!`;
-                flower.style.color = '#27ae60';
-                patternsDiv.appendChild(flower);
-                
-                showFeedback('flowerFeedback', 'Beautiful! All petals add up to 100!', 'success');
-                gameScores.flower += 25;
-            } else {
-                showFeedback('flowerFeedback', `${perfect} out of ${inputs.length} petals are perfect. Keep trying!`, 'error');
-                gameScores.flower += perfect * 3;
-            }
-            
-            document.getElementById('flowerScore').textContent = gameScores.flower;
-        }
-
         // Number Line Complete Game Functions
         function initNumberLineCompleteGame() {
             generateLineChallenge();
@@ -1851,7 +1015,6 @@
             
             lineConfigs.forEach((config, lineIndex) => {
                 const lineDiv = document.createElement('div');
-                lineDiv.className = 'number-line';
                 lineDiv.style.height = '60px';
                 lineDiv.style.background = '#f8f9fa';
                 lineDiv.style.border = '2px solid #3498db';
@@ -1860,11 +1023,12 @@
                 lineDiv.style.alignItems = 'center';
                 lineDiv.style.justifyContent = 'space-around';
                 lineDiv.style.padding = '0 20px';
+                lineDiv.style.borderRadius = '10px';
                 
                 for (let num = config.start; num <= config.end; num += config.step) {
                     const numSpan = document.createElement('span');
                     if (config.missing.includes(num)) {
-                        numSpan.innerHTML = `<input type="number" class="line-input" data-answer="${num}" style="width: 50px; text-align: center; border: 1px solid #3498db;">`;
+                        numSpan.innerHTML = `<input type="number" class="line-input" data-answer="${num}" style="width: 50px; text-align: center; border: 1px solid #3498db; padding: 5px;">`;
                     } else {
                         numSpan.textContent = num;
                         numSpan.style.fontWeight = 'bold';
@@ -1912,275 +1076,17 @@
             document.getElementById('lineScore').textContent = gameScores.line;
         }
 
-        // Bundle Match Game Functions
-        function initBundleMatchGame() {
-            generateBundleChallenge();
+        // Pattern Game Functions
+        function initPatternGame() {
+            generatePatternChallenge();
         }
 
-        function generateBundleChallenge() {
-            const numbers = [101, 123, 145, 167, 189];
-            const numbersContainer = document.getElementById('numbersToMatch');
-            const bundlesContainer = document.getElementById('bundlesToMatch');
-            
-            numbersContainer.innerHTML = '';
-            bundlesContainer.innerHTML = '';
-            
-            numbers.forEach((num, index) => {
-                const numCard = document.createElement('div');
-                numCard.className = 'number-pair';
-                numCard.style.cursor = 'pointer';
-                numCard.style.margin = '10px 0';
-                numCard.innerHTML = `<h3>${num}</h3>`;
-                numCard.onclick = () => selectForMatching(numCard, num, 'number');
-                numbersContainer.appendChild(numCard);
-            });
-            
-            const shuffledNumbers = [...numbers].sort(() => Math.random() - 0.5);
-            shuffledNumbers.forEach((num, index) => {
-                const bundleCard = document.createElement('div');
-                bundleCard.className = 'number-pair';
-                bundleCard.style.cursor = 'pointer';
-                bundleCard.style.margin = '10px 0';
-                
-                const hundreds = Math.floor(num / 100);
-                const tens = Math.floor((num % 100) / 10);
-                const ones = num % 10;
-                
-                const bundlesDiv = document.createElement('div');
-                bundlesDiv.className = 'matchstick-bundles';
-                
-                for (let i = 0; i < hundreds; i++) {
-                    const bundle = document.createElement('div');
-                    bundle.className = 'bundle hundred';
-                    bundle.textContent = '100';
-                    bundlesDiv.appendChild(bundle);
-                }
-                
-                for (let i = 0; i < tens; i++) {
-                    const bundle = document.createElement('div');
-                    bundle.className = 'bundle ten';
-                    bundle.textContent = '10';
-                    bundlesDiv.appendChild(bundle);
-                }
-                
-                for (let i = 0; i < ones; i++) {
-                    const bundle = document.createElement('div');
-                    bundle.className = 'bundle one';
-                    bundlesDiv.appendChild(bundle);
-                }
-                
-                bundleCard.appendChild(bundlesDiv);
-                bundleCard.onclick = () => selectForMatching(bundleCard, num, 'bundle');
-                bundlesContainer.appendChild(bundleCard);
-            });
-        }
-
-        function selectForMatching(card, value, type) {
-            document.querySelectorAll('.number-pair').forEach(c => {
-                c.style.border = '3px solid #ecf0f1';
-            });
-            
-            card.style.border = '3px solid #3498db';
-            
-            if (type === 'number') {
-                selectedNumber = { card, value };
-            } else {
-                selectedBundle = { card, value };
-            }
-            
-            if (selectedNumber && selectedBundle) {
-                if (selectedNumber.value === selectedBundle.value) {
-                    selectedNumber.card.style.border = '3px solid #27ae60';
-                    selectedBundle.card.style.border = '3px solid #27ae60';
-                    matches.push({ number: selectedNumber.value, correct: true });
-                } else {
-                    selectedNumber.card.style.border = '3px solid #e74c3c';
-                    selectedBundle.card.style.border = '3px solid #e74c3c';
-                    matches.push({ number: selectedNumber.value, bundle: selectedBundle.value, correct: false });
-                }
-                
-                selectedNumber = null;
-                selectedBundle = null;
-            }
-        }
-
-        function checkBundleMatches() {
-            const attempted = matches.length;
-            const correct = matches.filter(m => m.correct).length;
-            
-            document.getElementById('matchesAttempted').textContent = attempted;
-            document.getElementById('correctMatches').textContent = correct;
-            
-            if (correct === 5) {
-                showFeedback('bundleFeedback', 'Perfect! All numbers matched with correct bundles!', 'success');
-                gameScores.bundle += 40;
-            } else {
-                showFeedback('bundleFeedback', `You matched ${correct} out of 5 correctly. Keep practicing!`, 'error');
-                gameScores.bundle += correct * 6;
-            }
-            
-            document.getElementById('bundleScore').textContent = gameScores.bundle;
-        }
-
-        // Clap Snap Pat Game Functions
-        function initClapSnapPatGame() {
-            cspSounds = [];
-            generateCSPChallenge();
-        }
-
-        function generateCSPChallenge() {
-            const targets = [123, 145, 167, 189, 134, 156, 178];
-            currentCSPTarget = targets[Math.floor(Math.random() * targets.length)];
-            document.getElementById('cspTarget').textContent = currentCSPTarget;
-            clearCSPPattern();
-        }
-
-        function addSound(soundType) {
-            cspSounds.push(soundType);
-            updateCSPDisplay();
-        }
-
-        function updateCSPDisplay() {
-            const pattern = cspSounds.map(sound => {
-                switch(sound) {
-                    case 'clap': return '👏';
-                    case 'snap': return '🫰';
-                    case 'pat': return '🤚';
-                }
-            }).join(' ');
-            
-            const total = cspSounds.reduce((sum, sound) => {
-                switch(sound) {
-                    case 'clap': return sum + 100;
-                    case 'snap': return sum + 10;
-                    case 'pat': return sum + 1;
-                    default: return sum;
-                }
-            }, 0);
-            
-            document.getElementById('cspPattern').textContent = pattern || 'None';
-            document.getElementById('cspResult').textContent = total;
-        }
-
-        function clearCSPPattern() {
-            cspSounds = [];
-            updateCSPDisplay();
-        }
-
-        function checkCSPAnswer() {
-            const total = cspSounds.reduce((sum, sound) => {
-                switch(sound) {
-                    case 'clap': return sum + 100;
-                    case 'snap': return sum + 10;
-                    case 'pat': return sum + 1;
-                    default: return sum;
-                }
-            }, 0);
-            
-            const createdSpan = document.getElementById('numbersCreated');
-            const correctSpan = document.getElementById('correctPatterns');
-            
-            const currentCreated = parseInt(createdSpan.textContent) + 1;
-            createdSpan.textContent = currentCreated;
-            
-            if (total === currentCSPTarget) {
-                const currentCorrect = parseInt(correctSpan.textContent) + 1;
-                correctSpan.textContent = currentCorrect;
-                
-                const historyDiv = document.getElementById('cspHistory');
-                const historyItem = document.createElement('p');
-                historyItem.innerHTML = `✅ ${currentCSPTarget}: ${document.getElementById('cspPattern').textContent}`;
-                historyItem.style.color = '#27ae60';
-                historyDiv.appendChild(historyItem);
-                
-                showFeedback('cspFeedback', `Perfect! You created ${currentCSPTarget} with sounds!`, 'success');
-                gameScores.csp += 20;
-            } else {
-                showFeedback('cspFeedback', `You made ${total}, but the target was ${currentCSPTarget}. Try again!`, 'error');
-                gameScores.csp += 5;
-            }
-            
-            document.getElementById('cspScore').textContent = gameScores.csp;
-        }
-
-        // Stones Order Game Functions
-        function initStonesOrderGame() {
-            generateStoneChallenge();
-        }
-
-        function generateStoneChallenge() {
-            const sequences = [
-                { start: 150, end: 165, step: 1, missing: [153, 157, 161] },
-                { start: 170, end: 190, step: 2, missing: [174, 180, 186] },
-                { start: 100, end: 125, step: 5, missing: [110, 120] }
-            ];
-            
-            const config = sequences[Math.floor(Math.random() * sequences.length)];
-            const container = document.getElementById('stonesPath');
-            container.innerHTML = '';
-            
-            for (let num = config.start; num <= config.end; num += config.step) {
-                const stone = document.createElement('div');
-                stone.className = 'stone';
-                
-                if (config.missing.includes(num)) {
-                    stone.innerHTML = `<input type="number" data-answer="${num}" style="width: 40px; text-align: center; border: none; background: transparent; font-weight: bold;">`;
-                } else {
-                    stone.textContent = num;
-                    stone.classList.add('placed');
-                }
-                
-                container.appendChild(stone);
-            }
-        }
-
-        function checkStoneOrder() {
-            const inputs = document.querySelectorAll('#stonesPath input');
-            let total = inputs.length;
-            let correct = 0;
-            
-            inputs.forEach(input => {
-                const userAnswer = parseInt(input.value);
-                const correctAnswer = parseInt(input.dataset.answer);
-                
-                if (userAnswer === correctAnswer) {
-                    correct++;
-                    input.parentElement.style.background = 'linear-gradient(45deg, #27ae60, #2ecc71)';
-                    input.style.color = 'white';
-                } else {
-                    input.parentElement.style.background = 'linear-gradient(45deg, #e74c3c, #c0392b)';
-                    input.style.color = 'white';
-                }
-            });
-            
-            document.getElementById('stonesCorrect').textContent = correct;
-            
-            if (correct === total) {
-                const pathsSpan = document.getElementById('pathsCompleted');
-                const currentPaths = parseInt(pathsSpan.textContent) + 1;
-                pathsSpan.textContent = currentPaths;
-                
-                showFeedback('stoneFeedback', 'Excellent! All stones placed in correct order!', 'success');
-                gameScores.stone += 25;
-            } else {
-                showFeedback('stoneFeedback', `You placed ${correct} out of ${total} stones correctly!`, 'error');
-                gameScores.stone += correct * 4;
-            }
-            
-            document.getElementById('stoneScore').textContent = gameScores.stone;
-        }
-
-        // Jumping Patterns Game Functions
-        function initJumpingPatternsGame() {
-            generateJumpingChallenge();
-        }
-
-        function generateJumpingChallenge() {
-            const patterns = [5, 10, 2, 3];
+        function generatePatternChallenge() {
+            const patterns = [5, 10, 2, 3, 4];
             const currentPattern = patterns[Math.floor(Math.random() * patterns.length)];
-            document.getElementById('jumpPattern').textContent = currentPattern;
+            document.getElementById('patternType').textContent = `+${currentPattern}`;
             
-            const container = document.getElementById('jumpingPatterns');
+            const container = document.getElementById('patternContainer');
             container.innerHTML = '';
             
             const startNum = 100 + Math.floor(Math.random() * 50);
@@ -2225,7 +1131,7 @@
             container.appendChild(lineDiv);
         }
 
-        function checkJumpingPatterns() {
+        function checkPatterns() {
             const inputs = document.querySelectorAll('.pattern-input');
             let total = inputs.length;
             let correct = 0;
@@ -2245,7 +1151,7 @@
             });
             
             const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
-            document.getElementById('jumpAccuracy').textContent = accuracy;
+            document.getElementById('patternAccuracy').textContent = accuracy;
             
             if (accuracy === 100) {
                 const patternsSpan = document.getElementById('patternsCompleted');
@@ -2261,6 +1167,6 @@
             
             document.getElementById('patternScore').textContent = gameScores.pattern;
         }
-
-        // More Less Table Game Functions
-        function init
+    </script>
+</body>
+</html>
